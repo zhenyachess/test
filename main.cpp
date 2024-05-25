@@ -10,7 +10,11 @@ void printVector(const vector<T>& v){
 }
 
 int main(){
-    vector<int> v = {1, 2, 3, 4, 5};
+    vector<int> v;
+    int n; cout << "Input size of vector: "; cin >> n;
+    for(int i=1; i<=n; ++i){
+        v.push_back(i);
+    }
     printVector(v);
     return 0;
 }
